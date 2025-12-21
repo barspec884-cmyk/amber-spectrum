@@ -1,0 +1,371 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Amber Spectrum｜Bar SPEC</title>
+
+  <style>
+    :root{
+      --bg:#0e0c0a;
+      --text:#f4ead7;
+      --muted:#c9b89b;
+      --amber:#d7b274;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Noto Sans JP", system-ui, -apple-system, sans-serif;
+      color:var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header{
+      position: sticky; top: 0; z-index: 20;
+      padding: 22px 16px 18px;
+      text-align:center;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(180deg, rgba(14,12,10,.95), rgba(14,12,10,.8));
+      border-bottom: 1px solid rgba(215,178,116,.14);
+    }
+    .wrap{ width:min(980px, 92vw); margin:0 auto; }
+    
+    h1 {
+      margin: 0 0 6px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      color: var(--amber);
+      font-size: clamp(20px, 4vw, 32px);
+      text-transform: uppercase;
+    }
+    .sub{ color:var(--muted); font-size: 11px; letter-spacing: 0.08em; opacity: 0.8; text-transform: uppercase; }
+
+    main{ padding: 14px 0 40px; }
+
+    .grid{ display:grid; gap: 14px; }
+    @media (min-width: 860px){ .grid{ grid-template-columns: 1fr 1fr; } }
+
+    .card{
+      border: 1px solid rgba(215,178,116,.18);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card-head{
+      padding: 14px;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,.2);
+      border-bottom: 1px solid rgba(215,178,116,.12);
+    }
+    .jp{ font-weight: 900; font-size: 15px; color:#fff; letter-spacing: 0.02em; }
+    .en-title{ display:block; font-size: 11px; color: var(--amber); opacity: 0.8; margin-top: 2px; font-weight: 600; }
+
+    .pill{
+      padding: 6px 10px; border-radius: 999px;
+      border: 1px solid rgba(215,178,116,.2);
+      background: rgba(215,178,116,.08);
+      font-size: 10px; font-weight: 800; color: var(--muted);
+      letter-spacing: 0.05em;
+    }
+
+    .card-body{ padding: 12px 14px 14px; display:grid; gap: 10px; }
+    .kv{ border: 1px solid rgba(215,178,116,.12); background: rgba(0,0,0,.15); border-radius: 14px; padding: 10px 12px; }
+    .k{ display:block; color: var(--amber); font-weight: 800; font-size: 10px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .v{ font-size: 13px; line-height: 1.6; }
+    .en-sub{ display:block; font-size: 11.5px; color: var(--muted); margin-top: 4px; line-height: 1.4; font-style: italic; }
+
+    details{ border: 1px solid rgba(215,178,116,.1); background: rgba(0,0,0,.1); border-radius: 14px; overflow:hidden; }
+    summary{ list-style:none; cursor:pointer; padding: 10px 12px; display:flex; align-items:center; justify-content: space-between; }
+    .sum-title{ color: var(--muted); font-weight: 800; font-size: 11px; text-transform: uppercase; }
+    .chev svg{ width: 14px; height: 14px; fill:none; stroke: var(--amber); stroke-width: 2.5; transition: .2s; }
+    details[open] .chev svg{ transform: rotate(180deg); }
+    .detail-body{ padding: 0 12px 12px; border-top: 1px solid rgba(215,178,116,.1); display:grid; gap: 10px; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <h1>The Amber Spectrum</h1>
+      <p class="sub">12 Rituals to Savour the Essence of Whisky</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="grid">
+
+      <article class="card">
+        <div class="card-head">
+          <div class="name"><div class="jp">ストレート / ニート</div><span class="en-title">Straight / Neat</span></div>
+          <div class="pill">ESSENTIAL</div>
+        </div>
+        <div class="card-body">
+          <div class="kv">
+            <span class="k">Service / 作り方</span>
+            <div class="v">
+              常温の原酒をそのまま。チェイサーを添えて。
+              <span class="en-sub">Served pure at room temperature with a chaser on the side.</span>
+            </div>
+          </div>
+          <details>
+            <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
+            <div class="detail-body">
+              <div class="kv"><span class="k">Characteristic</span><div class="v">香りと余韻が最もダイレクト。数滴の加水で香りが花開く「開花」の瞬間を愉しむ、全ての基本。</div></div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div class="name"><div class="jp">ウイスキー・フロート</div><span class="en-title">Whisky Float</span></div>
+          <div class="pill">LAYERED</div>
+        </div>
+        <div class="card-body">
+          <div class="kv">
+            <span class="k">Service / 作り方</span>
+            <div class="v">
+              水やソーダの上に原酒を静かに浮かべる。
+              <span class="en-sub">Gently float the whisky on top of water or soda.</span>
+            </div>
+          </div>
+          <details>
+            <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
+            <div class="detail-body">
+              <div class="kv"><span class="k">Characteristic</span><div class="v">美しい二層のグラデーション。最初はストレート、次第に加水が進む、時間による味わいの変化。</div></div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div class="name"><div class="jp">ロック</div><span class="en-title">On the Rocks</span></div>
+          <div class="pill">CHILLED</div>
+        </div>
+        <div class="card-body">
+          <div class="kv">
+            <span class="k">Service / 作り方</span>
+            <div class="v">
+              大きめの氷と原酒。軽くステアして冷やす。
+              <span class="en-sub">Build over a large ice cube and stir gently to chill.</span>
+            </div>
+          </div>
+          <details>
+            <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
+            <div class="detail-body">
+              <div class="kv"><span class="k">Characteristic</span><div class="v">冷却による刺激の緩和と、氷の溶解による加水。ゆったりとした時間の経過を愉しむバーの定番。</div></div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div class="name"><div class="jp">ハイボール</div><span class="en-title">Highball</span></div>
+          <div class="pill">SPARKLING</div>
+        </div>
+        <div class="card-body">
+          <div class="kv">
+            <span class="k">Service / 作り方</span>
+            <div class="v">
+              氷＋原酒＋強炭酸。比率は1:3〜1:4。
+              <span class="en-sub">Whisky and strong soda water over ice. Ratio 1:3 to 1:4.</span>
+            </div>
+          </div>
+          <details>
+            <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
+            <div class="detail-body">
+              <div class="kv"><span class="k">Characteristic</span><div class="v">炭酸が香りを弾けさせ、爽快な飲み口に。食中酒としても、最初の一杯としても不動の人気。</div></div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div class="name"><div class="jp">神戸ハイボール</div><span class="en-title">Kobe Style Highball</span></div>
+          <div class="pill">TRADITIONAL</div>
+        </div>
+        <div class="card-body">
+          <div class="kv">
+            <span class="k">Service / 作り方</span>
+            <div class="v">
+              氷なし。冷やしたグラス・酒・強炭酸のみ。
+              <span class="en-sub">No ice. Chilled glass, chilled whisky, and cold soda only.</span>
+            </div>
+          </div>
+          <details>
+            <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
+            <div class="detail-body">
+              <div class="kv"><span class="k">Characteristic</span><div class="v">氷を入れないことで炭酸が抜けにくく、最後まで味が薄まらない。神戸のバー文化が育んだ濃厚なキレ。</div></div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div class="name"><div class="jp">ハーフロック</div><span class="en-title">Half Rock</span></div>
+          <div class="pill">BALANCED</div>
+        </div>
+        <div class="card-body">
+          <div class="kv">
+            <span class="k">Service / 作り方</span>
+            <div class="v">
+              原酒1：水1 ＋ 大きめの氷。
+              <span class="en-sub">Equal parts whisky and water (1:1) served over ice.</span>
+            </div>
+          </div>
+          <details>
+            <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
+            <div class="detail-body">
+              <div class="kv"><span class="k">Characteristic</span><div class="v">ロックの「冷たさ」とトワイスアップの「香りの開き」を両立。アルコールの角を和らげたい時に。</div></div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div class="name"><div class="jp">水割り</div><span class="en-title">Whisky and Water</span></div>
+          <div class="pill">SMOOTH</div>
+        </div>
+        <div class="card-body">
+          <div class="kv">
+            <span class="k">Service / 作り方</span>
+            <div class="v">
+              原酒1：水2〜2.5 ＋ 氷。
+              <span class="en-sub">Whisky mixed with mineral water and ice. Ratio 1:2 to 1:2.5.</span>
+            </div>
+          </div>
+          <details>
+            <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
+            <div class="detail-body">
+              <div class="kv"><span class="k">Characteristic</span><div class="v">日本で洗練されたスタイル。和食の繊細な味を邪魔せず、穏やかに伸びる甘みを長く愉しめます。</div></div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div class="name"><div class="jp">トワイスアップ</div><span class="en-title">Twice Up</span></div>
+          <div class="pill">ANALYSIS</div>
+        </div>
+        <div class="card-body">
+          <div class="kv">
+            <span class="k">Service / 作り方</span>
+            <div class="v">
+              原酒1：常温の水1。氷は不使用。
+              <span class="en-sub">Equal parts whisky and room temperature water. No ice.</span>
+            </div>
+          </div>
+          <details>
+            <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
+            <div class="detail-body">
+              <div class="kv"><span class="k">Characteristic</span><div class="v">プロのブレンダーも用いる手法。常温の水がウイスキーの香りの分子を最も効率よく開放させます。</div></div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div class="name"><div class="jp">ミスト</div><span class="en-title">Mist</span></div>
+          <div class="pill">REFRESHING</div>
+        </div>
+        <div class="card-body">
+          <div class="kv">
+            <span class="k">Service / 作り方</span>
+            <div class="v">
+              クラッシュアイスを満たしたグラスに原酒。
+              <span class="en-sub">Whisky served over a glass filled with crushed ice.</span>
+            </div>
+          </div>
+          <details>
+            <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
+            <div class="detail-body">
+              <div class="kv"><span class="k">Characteristic</span><div class="v">グラス表面に霧（ミスト）がつく爽快な演出。キンキンに冷えるため、夏場や軽やかな銘柄に。</div></div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div class="name"><div class="jp">フローズン・ウイスキー</div><span class="en-title">Frozen Whisky</span></div>
+          <div class="pill">SILKY</div>
+        </div>
+        <div class="card-body">
+          <div class="kv">
+            <span class="k">Service / 作り方</span>
+            <div class="v">
+              ボトルを冷凍庫で保管（とろみがつく）。
+              <span class="en-sub">Store the bottle in the freezer to increase viscosity.</span>
+            </div>
+          </div>
+          <details>
+            <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
+            <div class="detail-body">
+              <div class="kv"><span class="k">Characteristic</span><div class="v">冷却によりアルコールの角が取れ、シルキーな口当たりに。温度上昇と共に香りが膨らみます。</div></div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div class="name"><div class="jp">ホットウイスキー</div><span class="en-title">Hot Whisky</span></div>
+          <div class="pill">WARMING</div>
+        </div>
+        <div class="card-body">
+          <div class="kv">
+            <span class="k">Service / 作り方</span>
+            <div class="v">
+              温めたグラスに原酒とお湯（1:2〜3）。
+              <span class="en-sub">Mixed with hot water in a pre-warmed glass (Ratio 1:2 to 1:3).</span>
+            </div>
+          </div>
+          <details>
+            <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
+            <div class="detail-body">
+              <div class="kv"><span class="k">Characteristic</span><div class="v">湯気と共に立ち上がる豊かな香り。ハチミツやスパイスでのアレンジが映える冬の愉しみ。</div></div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div class="name"><div class="jp">カクテル</div><span class="en-title">Cocktail</span></div>
+          <div class="pill">UNLIMITED</div>
+        </div>
+        <div class="card-body">
+          <div class="kv">
+            <span class="k">Service / 作り方</span>
+            <div class="v">
+              銘柄に応じたレシピで他の材料と調和。
+              <span class="en-sub">Follow specific recipes to harmonize with other ingredients.</span>
+            </div>
+          </div>
+          <details>
+            <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
+            <div class="detail-body">
+              <div class="kv"><span class="k">Characteristic</span><div class="v">ウイスキーを「核」とした味の構造物。伝統と創造が交差する、無限のスペクトラム。</div></div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+    </section>
+  </main>
+</body>
+</html>
