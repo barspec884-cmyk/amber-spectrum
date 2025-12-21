@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Amber Spectrum｜Bar SPEC</title>
+  <title>THE AMBER SPECTRUM｜Bar SPEC</title>
 
   <style>
     :root{
@@ -40,6 +40,7 @@
       letter-spacing: 0.12em;
       color: var(--amber);
       font-size: clamp(20px, 4vw, 32px);
+      /* 大文字に戻しました */
       text-transform: uppercase;
     }
     .sub{ color:var(--muted); font-size: 11px; letter-spacing: 0.08em; opacity: 0.8; text-transform: uppercase; }
@@ -87,13 +88,16 @@
     .chev svg{ width: 14px; height: 14px; fill:none; stroke: var(--amber); stroke-width: 2.5; transition: .2s; }
     details[open] .chev svg{ transform: rotate(180deg); }
     .detail-body{ padding: 0 12px 12px; border-top: 1px solid rgba(215,178,116,.1); display:grid; gap: 10px; }
+
+    .detail-link { color: var(--amber); text-decoration: underline; text-underline-offset: 4px; transition: opacity 0.2s; }
+    .detail-link:hover { opacity: 0.7; }
   </style>
 </head>
 
 <body>
   <header>
     <div class="wrap">
-      <h1>The Amber Spectrum</h1>
+      <h1>THE AMBER SPECTRUM</h1>
       <p class="sub">12 Rituals to Savour the Essence of Whisky</p>
     </div>
   </header>
@@ -109,10 +113,7 @@
         <div class="card-body">
           <div class="kv">
             <span class="k">Service / 作り方</span>
-            <div class="v">
-              常温の原酒をそのまま。チェイサーを添えて。
-              <span class="en-sub">Served pure at room temperature with a chaser on the side.</span>
-            </div>
+            <div class="v">常温の原酒をそのまま。チェイサーを添えて。<span class="en-sub">Served pure at room temperature with a chaser on the side.</span></div>
           </div>
           <details>
             <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
@@ -131,10 +132,7 @@
         <div class="card-body">
           <div class="kv">
             <span class="k">Service / 作り方</span>
-            <div class="v">
-              水やソーダの上に原酒を静かに浮かべる。
-              <span class="en-sub">Gently float the whisky on top of water or soda.</span>
-            </div>
+            <div class="v">水やソーダの上に原酒を静かに浮かべる。<span class="en-sub">Gently float the whisky on top of water or soda.</span></div>
           </div>
           <details>
             <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
@@ -153,10 +151,7 @@
         <div class="card-body">
           <div class="kv">
             <span class="k">Service / 作り方</span>
-            <div class="v">
-              大きめの氷と原酒。軽くステアして冷やす。
-              <span class="en-sub">Build over a large ice cube and stir gently to chill.</span>
-            </div>
+            <div class="v">大きめの氷と原酒。軽くステアして冷やす。<span class="en-sub">Build over a large ice cube and stir gently to chill.</span></div>
           </div>
           <details>
             <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
@@ -175,10 +170,7 @@
         <div class="card-body">
           <div class="kv">
             <span class="k">Service / 作り方</span>
-            <div class="v">
-              氷＋原酒＋強炭酸。比率は1:3〜1:4。
-              <span class="en-sub">Whisky and strong soda water over ice. Ratio 1:3 to 1:4.</span>
-            </div>
+            <div class="v">氷＋原酒＋強炭酸。比率は1:3〜1:4。<span class="en-sub">Whisky and strong soda water over ice. Ratio 1:3 to 1:4.</span></div>
           </div>
           <details>
             <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
@@ -197,10 +189,7 @@
         <div class="card-body">
           <div class="kv">
             <span class="k">Service / 作り方</span>
-            <div class="v">
-              氷なし。冷やしたグラス・酒・強炭酸のみ。
-              <span class="en-sub">No ice. Chilled glass, chilled whisky, and cold soda only.</span>
-            </div>
+            <div class="v">氷なし。冷やしたグラス・酒・強炭酸のみ。<span class="en-sub">No ice. Chilled glass, chilled whisky, and cold soda only.</span></div>
           </div>
           <details>
             <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
@@ -219,10 +208,7 @@
         <div class="card-body">
           <div class="kv">
             <span class="k">Service / 作り方</span>
-            <div class="v">
-              原酒1：水1 ＋ 大きめの氷。
-              <span class="en-sub">Equal parts whisky and water (1:1) served over ice.</span>
-            </div>
+            <div class="v">原酒1：水1 ＋ 大きめの氷。<span class="en-sub">Equal parts whisky and water (1:1) served over ice.</span></div>
           </div>
           <details>
             <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
@@ -241,10 +227,7 @@
         <div class="card-body">
           <div class="kv">
             <span class="k">Service / 作り方</span>
-            <div class="v">
-              原酒1：水2〜2.5 ＋ 氷。
-              <span class="en-sub">Whisky mixed with mineral water and ice. Ratio 1:2 to 1:2.5.</span>
-            </div>
+            <div class="v">原酒1：水2〜2.5 ＋ 氷。<span class="en-sub">Whisky mixed with mineral water and ice. Ratio 1:2 to 1:2.5.</span></div>
           </div>
           <details>
             <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
@@ -263,10 +246,7 @@
         <div class="card-body">
           <div class="kv">
             <span class="k">Service / 作り方</span>
-            <div class="v">
-              原酒1：常温の水1。氷は不使用。
-              <span class="en-sub">Equal parts whisky and room temperature water. No ice.</span>
-            </div>
+            <div class="v">原酒1：常温の水1。氷は不使用。<span class="en-sub">Equal parts whisky and room temperature water. No ice.</span></div>
           </div>
           <details>
             <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
@@ -285,15 +265,12 @@
         <div class="card-body">
           <div class="kv">
             <span class="k">Service / 作り方</span>
-            <div class="v">
-              クラッシュアイスを満たしたグラスに原酒。
-              <span class="en-sub">Whisky served over a glass filled with crushed ice.</span>
-            </div>
+            <div class="v">クラッシュアイスを満たしたグラスに原酒。<span class="en-sub">Whisky served over a glass filled with crushed ice.</span></div>
           </div>
           <details>
             <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
             <div class="detail-body">
-              <div class="kv"><span class="k">Characteristic</span><div class="v">グラス表面に霧（ミスト）がつく爽快な演出。キンキンに冷えるため、夏場や軽やかな銘柄に。</div></div>
+              <div class="kv"><span class="k">Characteristic</span><div class="v">グラス表面に霧（ミスト）がつく爽快な演出。キンキンに冷えるため、夏場や軽やかな銘柄に向きます。</div></div>
             </div>
           </details>
         </div>
@@ -307,10 +284,7 @@
         <div class="card-body">
           <div class="kv">
             <span class="k">Service / 作り方</span>
-            <div class="v">
-              ボトルを冷凍庫で保管（とろみがつく）。
-              <span class="en-sub">Store the bottle in the freezer to increase viscosity.</span>
-            </div>
+            <div class="v">ボトルを冷凍庫で保管（とろみがつく）。<span class="en-sub">Store the bottle in the freezer to increase viscosity.</span></div>
           </div>
           <details>
             <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
@@ -329,10 +303,7 @@
         <div class="card-body">
           <div class="kv">
             <span class="k">Service / 作り方</span>
-            <div class="v">
-              温めたグラスに原酒とお湯（1:2〜3）。
-              <span class="en-sub">Mixed with hot water in a pre-warmed glass (Ratio 1:2 to 1:3).</span>
-            </div>
+            <div class="v">温めたグラスに原酒とお湯（1:2〜3）。<span class="en-sub">Mixed with hot water in a pre-warmed glass (Ratio 1:2 to 1:3).</span></div>
           </div>
           <details>
             <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
@@ -351,15 +322,20 @@
         <div class="card-body">
           <div class="kv">
             <span class="k">Service / 作り方</span>
-            <div class="v">
-              銘柄に応じたレシピで他の材料と調和。
-              <span class="en-sub">Follow specific recipes to harmonize with other ingredients.</span>
-            </div>
+            <div class="v">銘柄に応じたレシピで他の材料と調和。<span class="en-sub">Follow specific recipes to harmonize with other ingredients.</span></div>
           </div>
           <details>
             <summary><span class="sum-title">KNOWLEDGE</span><div class="chev"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></div></summary>
             <div class="detail-body">
               <div class="kv"><span class="k">Characteristic</span><div class="v">ウイスキーを「核」とした味の構造物。伝統と創造が交差する、無限のスペクトラム。</div></div>
+              <div class="kv">
+                <span class="k">More Details / 詳細</span>
+                <div class="v">
+                  ウイスキーカクテルの世界をさらに深く知る：<br>
+                  <a href="https://amber-mixology.vercel.app/" target="_blank" rel="noopener noreferrer" class="detail-link">THE AMBER MIXOLOGY ↗</a>
+                  <span class="en-sub">Discover more about whisky-based cocktails.</span>
+                </div>
+              </div>
             </div>
           </details>
         </div>
