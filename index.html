@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>THE AMBER SPECTRUM｜Bar SPEC</title>
+  <title>THE AMBER SPECTRUM — 琥珀を嗜む12の作法</title>
 
   <style>
     :root{
@@ -32,6 +32,28 @@
       background: linear-gradient(180deg, rgba(14,12,10,.95), rgba(14,12,10,.8));
       border-bottom: 1px solid rgba(215,178,116,.14);
     }
+
+    /* 戻るボタンのスタイル */
+    .back-button {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--amber);
+      font-size: 0.82rem;
+      border: 1px solid rgba(215,178,116, 0.4);
+      padding: 5px 15px;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      background: rgba(215,178,116, 0.05);
+      transition: all 0.3s ease;
+      text-transform: none;
+      letter-spacing: normal;
+    }
+    .back-button:hover {
+      background: rgba(215,178,116, 0.15);
+      border-color: var(--amber);
+      transform: translateX(-3px);
+    }
+
     .wrap{ width:min(980px, 92vw); margin:0 auto; }
     
     h1 {
@@ -40,7 +62,6 @@
       letter-spacing: 0.12em;
       color: var(--amber);
       font-size: clamp(20px, 4vw, 32px);
-      /* 大文字に戻しました */
       text-transform: uppercase;
     }
     .sub{ color:var(--muted); font-size: 11px; letter-spacing: 0.08em; opacity: 0.8; text-transform: uppercase; }
@@ -97,7 +118,8 @@
 <body>
   <header>
     <div class="wrap">
-      <h1>THE AMBER SPECTRUM</h1>
+      <a href="https://amber-palette-hub.vercel.app/" class="back-button">← Amber Palette Hub</a>
+      <h1>The Amber Spectrum</h1>
       <p class="sub">12 Rituals to Savour the Essence of Whisky</p>
     </div>
   </header>
